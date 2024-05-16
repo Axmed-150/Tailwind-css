@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="styleshee" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            peach: '#FEDEC9'
+          },
+          backgroundImage: {
+            'footer-section': 'linear-gradient(82deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 45%, rgba(0,0,0,1) 100%)',
+            'sectionBg': 'linear-gradient(82deg, rgba(254,220,200,1) 0%, rgba(255,255,255,1) 45%, rgba(254,220,200,1) 100%)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .icon {
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    .icon1 {
+      width: 24px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+    }
+
+    .icon2 {
+      width: 30px;
+      height: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+    }
+
+    .icon3 {
+      width: 18px;
+      height: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+    }
+
+    .icon4 {
+      width: 16px;
+      height: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+    }
+
+    .icon5 {
+      width: 22px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+    }
+
+    .icon6 {
+      width: 20px;
+      height: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+    }
+
+    .icon7 {
+      width: 32px;
+      height: 19px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+
+    }
+
+    .icon-logo {
+      background-image: url(./icon/logo.svg);
+    }
+
+    .icon-india {
+      background-image: url(./icon/india.svg);
+    }
+
+    .icon-instagram {
+      background-image: url(./icon/instagram.svg);
+    }
+
+    .icon-twitter {
+      background-image: url(./icon/twitter.svg);
+
+    }
+
+    .icon-facebook {
+      background-image: url(./icon/facebook.svg);
+    }
+
+    .icon-book {
+      background-image: url(./icon/book.svg);
+    }
+
+    .icon-snow {
+      background-image: url(./icon/snow.svg);
+    }
+
+    .icon-market {
+      background-image: url(./icon/market.svg);
+    }
+
+    .icon-chat {
+      background-image: url(./icon/chat.svg);
+    }
+
+    .icon-star {
+      background-image: url(./icon/star.svg);
+    }
+
+    .icon-exam {
+      background-image: url(./icon/exam.svg);
+    }
+
+    .icon-group {
+      background-image: url(./icon/friends.svg);
+    }
+
+    .icon-search {
+      background-image: url(./icon/icon-search.svg);
+    }
+
+    .arrow-top {
+      background-image: url(./icon/arrow-top.svg);
+    }
+
+    .arrow-down {
+      background-image: url(./icon/arrow-bot.svg);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="bg-[#FFFFFF]">
+    <header class="container relative h-[96px] z-50 flex justify-between items-center">
+      <h1 class="text-[#F77E23] text-[33px] font-semibold leading-[42px]">Fountain</h1>
+      <div class="space-x-[24px] text-[#FFFFFF] text-[16px] font-semibold">
+        <a href="#">
+          <span>Home</span>
+        </a>
+        <a href="#">
+          <span>Courses</span>
+        </a>
+        <a href="#">
+          <span>Instuctors</span>
+        </a>
+        <a href="#">
+          <span>Schedules</span>
+        </a>
+        <a href="#">
+          <span>Contact Us</span>
+        </a>
+      </div>
+      <div>
+        <i class="fa-solid fa-magnifying-glass  text-[#FFFFFF] mr-[15px] text-[24px]"></i>
+        <button class="text-[#FFFFFF] text-[16px] font-semibold leading-[21px] py-[8px] px-[18px]">
+          Login
+        </button>
+        <button class="text-[#FF6F28] bg-[#FFFFFF] rounded-[5px] py-[12px] px-[24px]">
+          Register
+        </button>
+      </div>
+    </header>
+
+    <section class="relative z-10 top-[-96px]">
+      <div>
+        <figure>
+          <img src="img/women.png">
+        </figure>
+        <div class="absolute inset-0 bg-black/30  z-50">
+          <div class="container relative h-full flex justify-center items-center text-center">
+
+            <div class="w-[734px]">
+              <h1 class="text-[60px] font-bold text-[#FFFFFF] leading-[90px]  mb-[12px]">A Classical
+                Education <br>for the Future
+              </h1>
+              <p class="text-[24px] text-[#FFFFFF] leading-[36px] font-normal  mb-[46px]">We prepare you to
+                engage in the
+                world
+                that is and to
+                help bring
+                about a world that
+                ought to be</p>
+              <button
+                class="bg-[#FF6F28] w-[162px] h-[60px] rounded-[5px] text-[16px] text-[#FFFFFF] font-semibold mb-[60px]">
+                Get Started
+              </button>
+
+
+              <div
+                class="w-[969px] h-[136px] bg-[#FFFFFF] absolute left-0 right-0 mx-auto bottom-[-68px] rounded-[10px] flex justify-between items-center px-[109px] shadow-[0px_21px_97px_0px_#CFCFCF40]">
+                <a href="#" class="flex items-center">
+                  <span class="bg-[#FFE7DB] w-[60px] h-[60px] rounded-[50px] flex items-center justify-center">
+                    <i class="icon icon-chat"></i>
+                  </span>
+                  <span class="pl-[24px] text-[24px] font-normal leading-[36px] text-[#000000]">Live chat</span>
+                </a>
+
+                <a href="#" class="flex items-center">
+                  <span class="bg-[#FFE7DB] w-[60px] h-[60px] rounded-[50px] inline-flex items-center justify-center">
+                    <i class=" icon icon-exam"></i>
+                  </span>
+                  <span class="pl-[24px] text-[24px] font-normal leading-[36px] text-[#000000]">Examination</span>
+                </a>
+
+                <a href="#" class="flex items-center">
+                  <span class="bg-[#FFE7DB] w-[60px] h-[60px] rounded-[50px] inline-flex items-center justify-center">
+                    <i class=" icon icon-group"></i>
+                  </span>
+                  <span class="pl-[24px] text-[24px] font-normal leading-[36px] text-[#000000]">Competition</span>
+                </a>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+        <div class="absolute right-[102px] top-[601px]">
+          <button class="bg-[#F77E23] w-[50px] h-[50px] shadow-[0px_0px_69.23px_0px_#70707040] rounded-full">
+            <i class=" icon1 arrow-top"></i>
+          </button>
+        </div>
+    </section>
+
+    <section class="container pt-[49px] mb-[100px]">
+      <div class=" text-center mb-[108px]">
+        <h1 class="text-[48px] font-semibold leading-[72px] text-[#000000]">Top cartegories</h1>
+      </div>
+
+      <div class="text-right mb-[24px]">
+        <button>
+          <h1 class="text-[24px] text-[#F77E23] font-normal leading-[36px]">See all</h1>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-4 gap-[32px]">
+        <figure class="w-[291px] h-[432px] relative">
+          <img src="./img/mens.jpg" class="size-full object-cover">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[9px] left-[24px]">Marketing</h1>
+        </figure>
+
+
+        <figure class="w-[291px] h-[432px] relative">
+          <img src="./img/design.jpg" class="size-full object-cover">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[9px] left-[24px]">Design</h1>
+        </figure>
+
+        <fugure class="w-[291px] h-[432px] relative">
+          <img src="./img/prog.jpg" class="size-full object-cover">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[9px] left-[24px]">Programming</h1>
+        </fugure>
+
+        <figure class="w-[291px] h-[432px] relative">
+          <img src="./img/tech.jpg" class="size-full object-cover">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[9px] left-[24px]">Technology</h1>
+        </figure>
+      </div>
+    </section>
+
+    <section class="bg-sectionBg py-[54px] px-[98px] grid grid-cols-2 gap-x-[56px] mb-[100px]">
+      <div class="relative">
+        <figure>
+          <img src="./img/women2.svg">
+        </figure>
+
+        <div
+          class="bg-[#ffffff] w-[168px] h-[210px] rounded-[10px] flex flex-col items-center py-[16px] absolute top-[266px] left-[367px] shadow-[0px_0px_69.23px_0px_#70707040]">
+          <span class="bg-[#FFE7DB] inline-flex justify-center w-[50px] h-[50px] items-center rounded-[50px] mb-[12px]">
+            <i class="icon2 icon-group"></i>
+          </span>
+
+          <div class="mb-[16px]">
+            <span
+              class="text-[#F77E23] text-[20px] leading-[30px] font-semibold relative after:content[''] after:absolute after:top-[100%] after:bg-center after:h-[0.3em] after:bg-no-repeat after:bg-contain after:left-0 after:right-0 after:bg-[url(/img/line.svg)]">Outstanding</span><br>
+            <span class="text-[#333333] text-[20px] font-normal leading-[30px]">Instructors</span>
+          </div>
+
+          <div class="flex space-x-[-15px]">
+
+            <figure class="w-[40px] h-[40px] border-[3px] border-[#ffffff] rounded-[30px]">
+              <img src="./img/men-face.jpg" class="bg-cover size-full rounded-[30px]">
+            </figure>
+
+            <figure class="w-[40px] h-[40px] border-[3px] border-[#ffffff] rounded-[30px]">
+              <img src="./img/men-face.jpg" class="bg-cover size-full rounded-[30px]">
+            </figure>
+
+            <figure class="w-[40px] h-[40px] border-[3px] border-[#ffffff] rounded-[30px]">
+              <img src="./img/men-face.jpg" class="bg-cover size-full rounded-[30px]">
+            </figure>
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="w-[608px] mt-[60px]">
+        <h1 class="text-[#333333] text-[52px] leading-[78px]">We are <span
+            class="text-[#F77E23] text-[52px] leading-[78px] font-bold relative after:content[''] after:absolute after:top-[100%] after:bg-center after:h-[0.3em] after:bg-no-repeat after:bg-contain after:left-0 after:right-0 after:bg-[url(/img/line.svg)]">Experts</span>
+          <br>
+          Learning Institution
+        </h1>
+        <p class="text-[24px] leading-[36px] font-normal text-[#333333] mt-[24px]">Lorem ipsum dolor sit amet,
+          consectetur
+          adipiscing elit. Sit
+          elit, bibendum volutpat
+          platea mi,
+          adipiscing
+          eget magna. Eu nulla ut urna venenatis velit et tincidunt. Id vitae velit </p>
+        <button
+          class="bg-[#FF6F28] text-[16px] font-semibold leading-[20px] text-[#FFFFFF] py-[20px] px-[42px] rounded-[5px] mt-[64px]">
+          Enroll now
+        </button>
+      </div>
+
+
+
+    </section>
+
+    <section class="container mb-[100px]">
+      <div class="text-center">
+        <h1 class="text-[#333333] text-[48px] leading-[72px] font-semibold">Explore our <br> popular course</h1>
+      </div>
+
+      <div class="flex justify-end items-center">
+        <lable
+          class="bg-[#F77E23] w-[129px] h-[46px]  text-[#ffffff] rounded-full flex items-center  px-[16px] relative">
+          <select class="appearance-none bg-[transparent] outline-none rounded-full relative w-full z-50 text-right">
+            <option>Sort by</option>
+            <option>photo-2</option>
+            <option>photo-4</option>
+            <option>photo-3</option>
+          </select>
+          <i class="icon2 arrow-down absolute left-[10px] top-0 bottom-0 my-auto z-0"></i>
+        </lable>
+      </div>
+
+      <div class="grid grid-cols-3 gap-x-[32px] gap-y-[32px] py-[28px]">
+
+        <div class="bg-[#FFFFFF] w-[392px] h-[405px] shadow-[0px_0px_20px_0px_#CBCBCB40] rounded-[10px]">
+          <figure>
+            <img src="./img/front-end.svg" class="rounded-[10px]">
+          </figure>
+          <div class="px-[24px] py-[24px]">
+            <div class="flex items-baseline mb-[42px]">
+              <h1 class="text-[24px] text-[#333333] font-medium leading-[36px]">Learn Marketing from Top Instructors.
+              </h1>
+              <i class="icon3 icon-star"></i>
+              <span class="text-[16px] leading-[24px] font-normal text-[#000000]">4.5</span>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <span class="text-[#333333] leading-[24px] text-[16px] font-medium">6 weeks</span>
+              <span>
+                <i class="icon4 icon-group"></i>
+                <span class="text-[#333333] text-[16px] leading-[24px] font-medium">1.5k Students</span>
+              </span>
+              <span class="text-[#F77E23] text-[24px] font-semibold leading-[36px]">30.5$</span>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="bg-[#FFFFFF] w-[392px] h-[405px] shadow-[0px_0px_20px_0px_#CBCBCB40] rounded-[10px]">
+          <figure>
+            <img src="./img/front-end2.svg">
+          </figure>
+          <div class="px-[24px] py-[24px]">
+            <div class="flex items-baseline mb-[42px]">
+              <h1 class="text-[24px] text-[#333333] font-medium leading-[36px]">Front-End Development Is Not Hard As You
+                think
+
+              </h1>
+              <i class="icon3 icon-star"></i>
+              <span class="text-[16px] leading-[24px] font-normal text-[#000000]">4.5</span>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <span class="text-[#333333] leading-[24px] text-[16px] font-medium">6 weeks</span>
+              <span>
+                <i class="icon4 icon-group"></i>
+                <span class="text-[#333333] text-[16px] leading-[24px] font-medium">1.5k Students</span>
+              </span>
+              <span class="text-[#F77E23] text-[24px] font-semibold leading-[36px]">30.5$</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#FFFFFF] w-[392px] h-[405px] shadow-[0px_0px_20px_0px_#CBCBCB40] rounded-[10px]">
+          <figure>
+            <img src="./img/front-end3.svg">
+          </figure>
+          <div class="px-[24px] py-[24px]">
+            <div class="flex items-baseline mb-[42px]">
+              <h1 class="text-[24px] text-[#333333] font-medium leading-[36px]">Everrything You Need To Know In UX
+              </h1>
+              <i class="icon3 icon-star"></i>
+              <span class="text-[16px] leading-[24px] font-normal text-[#000000]">4.5</span>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <span class="text-[#333333] leading-[24px] text-[16px] font-medium">6 weeks</span>
+              <span>
+                <i class="icon4 icon-group"></i>
+                <span class="text-[#333333] text-[16px] leading-[24px] font-medium">1.5k Students</span>
+              </span>
+              <span class="text-[#F77E23] text-[24px] font-semibold leading-[36px]">30.5$</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#FFFFFF] w-[392px] h-[405px] shadow-[0px_0px_20px_0px_#CBCBCB40] rounded-[10px]">
+          <figure>
+            <img src="./img/froent-end4.svg">
+          </figure>
+          <div class="px-[24px] py-[24px]">
+            <div class="flex items-baseline mb-[42px]">
+              <h1 class="text-[24px] text-[#333333] font-medium leading-[36px]">Learn Photography With Ease
+              </h1>
+              <i class="icon3 icon-star"></i>
+              <span class="text-[16px] leading-[24px] font-normal text-[#000000]">4.5</span>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <span class="text-[#333333] leading-[24px] text-[16px] font-medium">6 weeks</span>
+              <span>
+                <i class="icon4 icon-group"></i>
+                <span class="text-[#333333] text-[16px] leading-[24px] font-medium">1.5k Students</span>
+              </span>
+              <span class="text-[#F77E23] text-[24px] font-semibold leading-[36px]">30.5$</span>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="bg-[#FFFFFF] w-[392px] h-[405px] shadow-[0px_0px_20px_0px_#CBCBCB40] rounded-[10px]">
+          <figure>
+            <img src="./img/front-end5.svg">
+          </figure>
+          <div class="px-[24px] py-[24px]">
+            <div class="flex items-baseline mb-[42px]">
+              <h1 class="text-[24px] text-[#333333] font-medium leading-[36px] mb-[42px]">Be A Pro In Data Analysis
+              </h1>
+              <i class="icon3 icon-star"></i>
+              <span class="text-[16px] leading-[24px] font-normal text-[#000000]">4.5</span>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <span class="text-[#333333] leading-[24px] text-[16px] font-medium">6 weeks</span>
+              <span>
+                <i class="icon4 icon-group"></i>
+                <span class="text-[#333333] text-[16px] leading-[24px] font-medium">1.5k Students</span>
+              </span>
+
+
+              <span class="text-[#F77E23] text-[24px] font-semibold leading-[36px]">30.5$</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#FFFFFF] w-[392px] h-[405px] shadow-[0px_0px_20px_0px_#CBCBCB40] rounded-[10px]">
+          <figure>
+            <img src="./img/kiber.svg">
+          </figure>
+          <div class="px-[24px] py-[24px]">
+            <div class="flex items-baseline mb-[42px]">
+              <h1 class="text-[24px] text-[#333333] font-medium leading-[36px]">Ethical Harking Is Not Hard As
+                You Think
+              </h1>
+              <i class="icon3 icon-star"></i>
+              <span class="text-[16px] leading-[24px] font-normal text-[#000000]">4.5</span>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <span class="text-[#333333] leading-[24px] text-[16px] font-medium">6 weeks</span>
+              <span>
+                <i class="icon4 icon-group"></i>
+                <span class="text-[#333333] text-[16px] leading-[24px] font-medium">1.5k Students</span>
+              </span>
+              <span class="text-[#F77E23] text-[24px] font-semibold leading-[36px]">30.5$</span>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <section class="bg-sectionBg grid grid-cols-2  py-[63px] px-[177px]">
+      <div class="w-[502px] mt-[139px]">
+        <h1 class="text-[#333333] text-[52px] leading-[78px] font-bold">Our online <span
+            class="text-[#FF6F28]">examination</span> is
+          top-notch
+        </h1>
+        <p class="text-[24px] leading-[36px] font-normal text-[#333333] mt-[24px]">Prepare your self for greater
+          challenges with our online examination.
+        </p>
+        <button
+          class="bg-[#FF6F28] text-[16px] font-semibold leading-[20px] text-[#FFFFFF] py-[20px] px-[42px] rounded-[5px] mt-[64px]">
+          Take a test
+        </button>
+      </div>
+
+      <div class="relative ml-[60px]">
+        <figure>
+          <img src="./img/women3.svg">
+        </figure>
+
+        <div class="bg-[#ffffff] w-[168px] h-[175px] rounded-[10px] flex flex-col items-center py-[16px] px-[13px] absolute
+          top-[272px] right-[325px] shadow-[0px_0px_69.23px_0px_#70707040]">
+          <span class="bg-[#FFE7DB] inline-flex justify-center w-[41px] h-[41px] items-center rounded-[50px] mb-[12px]">
+            <i class="icon2 icon-market"></i>
+          </span>
+
+          <div class="mb-[16px] flex flex-col items-center">
+            <span
+              class="text-[#F77E23] text-[20px] leading-[30px] font-semibold relative after:content[''] after:absolute after:top-[100%] after:bg-center after:h-[0.3em] after:bg-no-repeat after:bg-contain after:left-0 after:right-0 after:bg-[url(/img/line.svg)] ">Increase</span><br>
+            <span class="text-[#333333] text-[20px] font-normal leading-[30px] text-center">Your job opportunity</span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <section class="container pt-[49px] mb-[100px] mt-[100px]">
+      <div class=" text-center mb-[107px]">
+        <h1 class="text-[48px] font-bold leading-[72px] text-[#000000]">Popular examination</h1>
+      </div>
+
+      <div class="text-right mb-[24px]">
+        <button>
+          <h1 class="text-[24px] text-[#F77E23] font-normal leading-[36px]">See all</h1>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-4 gap-[32px]">
+        <figure class="w-[282px] h-[303px] relative">
+          <img src="./img/nature.jpg" class="size-full object-cover rounded-[10px]">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[9px] left-[24px]">NATURE of Science
+          </h1>
+        </figure>
+
+
+        <figure class="w-[282px] h-[303px] relative">
+          <img src="./img/annual.jpg" class="size-full object-cover roundd-[10px]">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[9px] left-[24px]">2022 Astro Report
+          </h1>
+        </figure>
+
+        <fugure class="w-[282px] h-[303px] relative">
+          <img src="./img/data-analiysis.jpg" class="size-full object-cover rounded-[10px]">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[9px] left-[24px]">Data Analysis With
+            Python</h1>
+        </fugure>
+
+        <figure class="w-[282px] h-[303px] relative">
+          <img src="./img/uix.jpg" class="size-full object-cover rounded-[10px]">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[9px] left-[24px]">Advanced UX Designs
+          </h1>
+        </figure>
+      </div>
+    </section>
+
+    <div class="text-center w-[866px] mx-auto mb-[64px]">
+      <h1 class="text-[48px] font-bold leading-[66px] text-[#333333]">Competate with various scholars around
+        the globe
+      </h1>
+    </div>
+
+    <section class="bg-sectionBg px-[104px] grid grid-cols-2">
+      <div class="relative">
+        <figure>
+          <img src="./img/men4.svg">
+        </figure>
+
+        <div
+          class="w-[168px] h-[175px] flex flex-col items-center pt-[16px] pb-[20px] bg-[#FFFFFF] shadow-[0px_0px_69.23px_0px_#70707040] rounded-[10px] absolute left-[333px] bottom-[135px]">
+          <div>
+            <span class="inline-flex w-[41px] h-[41px] bg-[#FFE7DB] items-center justify-center rounded-[36px]">
+              <i class="icon1 icon-group"></i>
+            </span>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <span
+              class="text-[#F77E23] text-[20px] leading-[30px] font-semibold relative after:content-[''] after:absolute after:top-[100%] after:bg-center after:h-[0.3em] after:bg-no-repeat after:bg-contain after:left-0 after:right-0 after:bg-[url(/img/line.svg)]">Den</span><br>
+            <span class="text-[#333333] text-[18px] leading-[30px] pb-[20px] font-semibold text-center">of <br>
+              Schorlars</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div
+        class="w-[604px] h-[655px] bg-[#FFFFFF] shadow-[0px_0px_25px_0px_#1118272E] rounded-[10px] pt-[31px] pb-[48px] px-[40px] flex flex-col items-center mt-[52px] mb-[46px]">
+        <div>
+          <h1 class="text-[16px] font-semibold text-[#333333] leading-[22px]">Registration to get notified about new
+            competition and
+            article
+            we publish.</h1>
+        </div>
+
+        <div class="flex flex-col items-center w-[100%] space-y-[32px]">
+          <input type="text" placeholder="Full name"
+            class="border-[1px] border-[#D9DCE0] outline-none w-[100%] bg-[#FAFAFC] rounded-[6px] h-[60px] placeholder:text-[16px] placeholder:leading-[22px] placeholder:font-normal placeholder:text-[#676767]">
+          <input type="email" placeholder="Email"
+            class="border-[1px] border-[#D9DCE0] outline-none w-[100%] bg-[#FAFAFC] rounded-[6px] h-[60px] placeholder:text-[16px] placeholder:leading-[22px] placeholder:font-normal placeholder:text-[#676767]">
+          <input type="text" placeholder="Phone number"
+            class="border-[1px] border-[#D9DCE0] outline-none w-[100%] bg-[#FAFAFC] rounded-[6px] h-[60px] placeholder:text-[16px] placeholder:leading-[22px] placeholder:font-normal placeholder:text-[#676767]">
+          <div class="w-[100%] relative">
+            <select
+              class="outline-none border-[1px] border-[#D9DCE0] w-full bg-[#FAFAFC] rounded-[6px] h-[60px] text-center appearance-none relative z-200">
+              <option>List of courses goes here </option>
+              <option>List of courses goes here</option>
+              <option>List of courses goes here</option>
+            </select>
+            <i class="icon1 icon-snow absolute top-0 bottom-0 left-[35px] my-auto z-0"></i>
+            <i class="icon1 arrow-down absolute top-0 bottom-0 right-[15px] my-auto z-0 "></i>
+          </div>
+
+          <div class="text-right pr-[33px] w-[100%] pt-[82px]">
+            <button
+              class="bg-[#F77E23] text-[16px] leading-[20px] font-semibold py-[16px] px-[80px] rounded-[5px] text-[#FFFFFF]">
+              Register
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="container pt-[49px] mb-[100px]">
+      <div class=" text-center mb-[108px]">
+        <h1 class="text-[48px] font-semibold leading-[72px] text-[#000000]">Featured Competition</h1>
+      </div>
+
+      <div class="text-right mb-[24px]">
+        <button>
+          <h1 class="text-[24px] text-[#F77E23] font-normal leading-[36px]">See all</h1>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-4 gap-[32px]">
+        <figure class="w-[291px] h-[432px] relative">
+          <img src="./img/mens.jpg" class="size-full object-cover">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[46px] left-[24px]">Marketing Contest</h1>
+          <p class="text-[20px] font-semibold text-[#FFFFFF] absolute bottom-[9px] left-[24px]">The Future Economy</p>
+        </figure>
+
+
+        <figure class="w-[291px] h-[432px] relative">
+          <img src="./img/design.jpg" class="size-full object-cover">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[9px] left-[46px]">UI/UX Design Contest
+          </h1>
+          <p class="text-[20px] font-semibold text-[#FFFFFF] absolute bottom-[9px] left-[24px]">Accessibility in design
+          </p>
+        </figure>
+
+        <fugure class="w-[291px] h-[432px] relative">
+          <img src="./img/prog.jpg" class="size-full object-cover">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[46px] left-[24px]">Programming Contest
+          </h1>
+          <p class="text-[20px] font-semibold text-[#FFFFFF] absolute bottom-[9px] left-[24px]">The Future of AI</p>
+        </fugure>
+
+        <figure class="w-[291px] h-[432px] relative">
+          <img src="./img/tech.jpg" class="size-full object-cover">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[46px] left-[24px]">Photography Contest
+          </h1>
+          <p class="text-[20px] font-semibold text-[#FFFFFF] absolute bottom-[9px] left-[24px]">The Beauty of Art</p>
+        </figure>
+      </div>
+
+    </section>
+
+    <section class="bg-sectionBg py-[95px] px-[149px] grid grid-cols-2 gap-x-[100px]">
+      <div class="w-[564px]">
+        <h1 class="text-[52px] leading-[71px] font-bold pb-[24px]">Get <span
+            class="text-[#FF6F28] text-[52px] leading-[71px] font-bold relative after:content[''] after:absolute after:top-[100%] after:bg-center after:h-[0.3em] after:bg-no-repeat after:bg-contain after:left-0 after:right-0 after:bg-[url(/img/line.svg)] ">Publicstions</span>
+          from best
+          Aurtors around
+          the Globe</h1>
+        <p class="text-[#333333] font-normal leading-[36px] text-[24px] pb-[64px]">Lorem ipsum dolor sit at, consectetur
+          adipielit.<br> Facilisi fermentum,
+          dignissim pharetra. pharetra.
+          Aliquam
+        </p>
+        <button
+          class="bg-[#FF6F28] text-[16px] leading-[20px] font-semibold py-[20px] px-[42px] rounded-[5px]">Register</button>
+      </div>
+
+      <div class="relative">
+        <figure>
+          <img src="./img/NATURE.svg">
+        </figure>
+
+        <div
+          class="w-[168px] h-[175px] absolute top-[147px] right-[352px] bg-[#FFFFFF] rounded-[10px] shadow-[box-shadow: 0px 0px 69.23px 0px #70707040] flex flex-col items-center pt-[16px] pb-[18px]">
+          <span class="bg-[#FFE7DB] inline-flex justify-center items-center w-[41px] h-[41px] rounded-[36px]">
+            <i class="icon4 icon-book"></i>
+          </span>
+
+          <div class="text-center"><span class="text-[16px] leading-[30px] font-normal">Readers<br>
+              are<br>
+              <span
+                class="text-[#FF6F28] text-[16px] leading-[30px] font-normal relative after:content[''] after:absolute after:top-[100%] after:bg-center after:h-[0.3em] after:bg-no-repeat after:bg-contain after:left-0 after:right-0 after:bg-[url(/img/line.svg)]">leaders</span></span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="container pt-[49px] mb-[100px] mt-[100px]">
+      <div class=" text-center mb-[107px]">
+        <h1 class="text-[48px] font-bold leading-[72px] text-[#000000]">Recent Publications</h1>
+      </div>
+
+      <div class="text-right mb-[24px]">
+        <button>
+          <h1 class="text-[24px] text-[#F77E23] font-normal leading-[36px]">See all</h1>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-4 gap-[32px]">
+        <figure class="w-[282px] h-[303px] relative">
+          <img src="./img/nature.jpg" class="size-full object-cover rounded-[10px]">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[9px] left-[24px]">NATURE of Science
+          </h1>
+        </figure>
+
+
+        <figure class="w-[282px] h-[303px] relative">
+          <img src="./img/annual.jpg" class="size-full object-cover roundd-[10px]">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[9px] left-[24px]">2022 Astro Report
+          </h1>
+        </figure>
+
+        <fugure class="w-[282px] h-[303px] relative">
+          <img src="./img/data-analiysis.jpg" class="size-full object-cover rounded-[10px]">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[9px] left-[24px]">Data Analysis With
+            Python</h1>
+        </fugure>
+
+        <figure class="w-[282px] h-[303px] relative">
+          <img src="./img/uix.jpg" class="size-full object-cover rounded-[10px]">
+          <h1 class="text-[#FFFFFF] text-[32px] font-semibold absolute bottom-[9px] left-[24px]">Advanced UX Designs
+          </h1>
+        </figure>
+      </div>
+    </section>
+    <div class="text-center mb-[13px]">
+      <h1 class="text-[#242243] text-[32px] leading-[48px] font-semibold">Reviews</h1>
+    </div>
+
+    <section class="container grid grid-cols-2 mb-[120px]">
+
+      <div class="w-[382px] mr-[34px] pt-[124px]">
+        <h1 class="text-[48px] font-bold leading-[66px]">What our <span
+            class="text-[#F77E23] text-[48px] leading-[66px] font-bold relative after:content[''] after:absolute after:top-[100%] after:bg-center after:h-[0.3em] after:bg-no-repeat after:bg-contain after:left-0 after:right-0 after:bg-[url(/img/line.svg)]">Students</span>
+          say about
+          us</h1>
+      </div>
+
+      <div class="pt-[41px] pl-[26px] pb-[50px] flex space-x-[32px]">
+        <div
+          class="w-[480px] h-[352px] bg-[#FFFFFF] rounded-[10px] shadow-[0px_0px_20px_0px_#E2E2E240] pt-[59px] pl-[48px] overflow-hidden">
+          <div class="flex items-center">
+            <figure class="w-[70px] h-[70px] mr-[16px]">
+              <img src="./img/mens.jpg" class="size-full object-cover rounded-[40px]">
+            </figure>
+            <h1 class="text-[#000000] text-[20px] leading-[28px] font-bold">Mohh Jumah<br>
+              <span class="text-[#F77E23] text-[16px] leading-[25px] font-semibold">Senior Developer</span>
+            </h1>
+          </div>
+          <p class="text-[#333333] text-[18px] font-normal leading-[30px] pt-[24px]">Lorem ipsum dolor sit amet,
+            consectetur
+            adipiscing elit.
+            Consectetur ac
+            blandit nam massa massa
+            elementum
+            mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis </p>
+
+
+        </div>
+
+        <div
+          class="w-[480px] h-[352px] bg-[#FFFFFF] rounded-[10px] shadow-[0px_0px_20px_0px_#E2E2E240] pt-[59px] pl-[48px] overflow-hidden">
+          <div class="flex items-center">
+            <figure class="w-[70px] h-[70px] mr-[16px]">
+              <img src="./img/mens.jpg" class="size-full object-cover rounded-[40px]">
+            </figure>
+            <h1 class="text-[#000000] text-[20px] leading-[28px] font-bold">John Mark<br>
+              <span class="text-[#F77E23] text-[16px] leading-[25px] font-semibold">Data Analyst</span>
+            </h1>
+          </div>
+          <p class="text-[#333333] text-[18px] font-normal leading-[30px] pt-[24px]">Lorem ipsum dolor sit amet,
+            consectetur
+            adipiscing elit. Consectetur ac blandit nam massa massa
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa
+            elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet
+            venenatis </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="bg-footer-section px-[100px] pt-[75px]">
+      <div class="flex items-start justify-between">
+        <div class="w-[296px]">
+          <h1 class="text-[#F77E23] text-[33px] leading-[42px] font-semibold pb-[24px]">Fountain</h1>
+          <p class="text-[#FFFFFF] text-[16px] leading-[24px] font-normal tracking-[1px] pb-[32px]">We are not here to
+            sell you
+            products, we sell
+            value
+            through our expertise.
+          </p>
+          <div class="space-x-[24px]">
+            <i class="icon1 icon-facebook"></i>
+            <i class="icon5 icon-twitter"></i>
+            <i class="icon5 icon-instagram"></i>
+            <i class="icon6 icon-india"></i>
+
+          </div>
+
+        </div>
+
+        <div class="flex items-baseline">
+          <div class="mr-[96px]">
+            <h1 class="text-[#FFFFFF] text-[16px] leading-[24px] font-semibold">Address:</h1>
+            <p class="text-[#FFFFFF] text-[16px] leading-[24px] font-normal">38 opebi Road, Ikeja, Lagos State, Nigeia.
+            </p>
+            <h1 class="font-semibold text-[#FFFFFF] text-[16px] leading-[24px]">Phone:</h1>
+            <p class="text-[#FFFFFF] text-[16px] leading-[24px] font-normal">+2349022396389</p>
+            <h1 class="text-[#FFFFFF] text-[16px] leading-[24px] font-semibold">Email:</h1>
+            <p class="text-[#FFFFFF] text-[16px] leading-[24px] font-normal">contact@contentionary.com</p>
+          </div>
+
+          <div>
+            <h1 class="text-[#FFFFFF] text-[16px] leading-[24px] font-semibold pb-[24px]">Company</h1>
+            <p class="text-[#FFFFFF] text-[16px] leading-[24px] font-normal">About Us<br>
+              Features<br>
+              Pricing</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="flex flex-col mt-[49px] items-center mb-[63px]">
+        <h1 class="text-[#FFFFFF] text-[24px] leading-[36px] font-normal mb-[17px]">Subscribe to get latest updates</h1>
+        <div class="flex">
+          <input type="email" placeholder="Your Email address"
+            class="w-[545px] h-[52px] outline-none placeholder:text-[#F77E23] placeholder:text-[14px] placeholder:leading-[21px] placeholder:font-medium placeholder:pl-[18px]">
+          <button class="bg-[#F77E23] text-[#FFFFFF] text-[14px] leading-[21px] font-normal w-[126px] h-[52px]">
+            Subscribe
+          </button>
+        </div>
+      </div>
+
+      <div class="flex items-center pb-[29px]">
+        <span class="bg-[#F77D27] w-[36px] h-[36px] inline-flex items-center justify-end rounded-full">
+          <i class="icon7 icon-logo"></i>
+        </span>
+        <span class="text-[#F77D27] font-bold text-[16px]">Contentionary</span>
+        <p class="text-[24px] leading-[36px] font-normal text-[#FFFFFF] ml-[32px]">Powered By Contentionary</p>
+
+      </div>
+    </section>
+
+
+
+
+
+
+  </main>
+
+
+
+</body>
+
+</html>
